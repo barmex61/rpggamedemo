@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="24" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="20">
+ <properties>
+  <property name="mapMusic" value="audio/fields.ogg"/>
+ </properties>
+ <tileset firstgid="1" name="mapTileset" tilewidth="16" tileheight="16" spacing="12" margin="6" tilecount="648" columns="36">
+  <image source="../graphics/mapObjects.png" width="1024" height="512"/>
+  <tile id="377">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="2" y="3" width="14" height="13"/>
+   </objectgroup>
+  </tile>
+  <tile id="378">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="3" width="16" height="13"/>
+   </objectgroup>
+  </tile>
+  <tile id="379">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="2" width="15" height="14"/>
+   </objectgroup>
+  </tile>
+  <tile id="414">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="415">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="449">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="1" y="0" width="15" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="450">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="451">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="649" name="entityTileset" tilewidth="48" tileheight="48" tilecount="3" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="16" height="16" source="../graphics/chest.png"/>
+  </tile>
+  <tile id="1">
+   <image width="48" height="48" source="../graphics/player.png"/>
+  </tile>
+  <tile id="2">
+   <image width="32" height="32" source="../graphics/slime.png"/>
+  </tile>
+ </tileset>
+ <layer id="6" name="ground" width="24" height="20">
+  <data encoding="base64" compression="zlib">
+   eJybysDAMHUU0xWzECk20G4axcMTj8b1KB6seKSlTQCpixSb
+  </data>
+ </layer>
+ <layer id="7" name="background" width="24" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiZoJKRgaEKiKuBuIaR+ubPBZo5D4jnA/ECGph/EGjmISA+DMRHaGD+U6CZz4D4ORC/QDP/JvWtG/bgLjAM7w3CcNwIdNMmIN5MgzQEAleB5l4D4us0Mn+wgcFSrmBLbyBAKM0NZLkyEgEA/tMg1A==
+  </data>
+ </layer>
+ <layer id="8" name="foreground" width="24" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2Dwg6mMDAzTGGln/k6g2bvIMD8TqCcLiLNp5LZeoLl9QNxPQ7+PAkwwWNPbKBheAADELQgz
+  </data>
+ </layer>
+ <objectgroup id="10" name="entity">
+  <object id="14" name="slime" gid="651" x="177" y="202" width="32" height="32"/>
+  <object id="15" name="slime" gid="651" x="24.6667" y="214" width="32" height="32"/>
+  <object id="16" name="slime" gid="651" x="248.667" y="70" width="32" height="32"/>
+  <object id="17" name="chest" gid="649" x="334.667" y="61.3333" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="11" name="portals">
+  <object id="18" x="112" y="0" width="48.5" height="16">
+   <properties>
+    <property name="toMap" value="map/map1.tmx"/>
+    <property name="toPortal" type="int" value="15"/>
+   </properties>
+  </object>
+  <object id="19" x="128" y="48" width="16" height="16"/>
+ </objectgroup>
+</map>
